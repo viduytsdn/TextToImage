@@ -1,0 +1,273 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #0b1622;
+  color: #f7fafc;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #152b40, #050c14 60%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.app-header p {
+  margin: 0;
+  color: rgba(247, 250, 252, 0.75);
+}
+
+.layout-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.protected-shell {
+  background: rgba(13, 25, 38, 0.8);
+  border: 1px solid rgba(148, 193, 249, 0.25);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(2, 12, 30, 0.35);
+}
+
+.protected-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.protected-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.protected-locked {
+  display: grid;
+  gap: 1rem;
+  background: rgba(4, 10, 18, 0.6);
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px dashed rgba(148, 193, 249, 0.4);
+}
+
+.protected-content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.saved-banner {
+  background: rgba(45, 212, 191, 0.1);
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  color: #9efce6;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.panel-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: rgba(247, 250, 252, 0.75);
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field label,
+.field span,
+legend {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 193, 249, 0.35);
+  background: rgba(2, 11, 24, 0.75);
+  color: #f7fafc;
+  font-size: 1rem;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid rgba(99, 179, 237, 0.8);
+  outline-offset: 1px;
+}
+
+.field-hint {
+  color: rgba(247, 250, 252, 0.55);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.error-text {
+  color: #fca5a5;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.saved-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #9efce6;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 500;
+}
+
+.checkbox input {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.primary-button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #60a5fa, #22d3ee);
+  color: #020817;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.primary-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34, 211, 238, 0.35);
+}
+
+.ghost-button {
+  border: 1px solid rgba(148, 193, 249, 0.35);
+  background: transparent;
+  color: rgba(247, 250, 252, 0.85);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.grid-two {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.usage-options {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid rgba(148, 193, 249, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.form-footer {
+  font-size: 0.9rem;
+}
+
+.prompt-composer {
+  background: rgba(13, 25, 38, 0.8);
+  border: 1px solid rgba(148, 193, 249, 0.25);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(2, 12, 30, 0.35);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.composer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.composer-header h2 {
+  margin: 0;
+}
+
+.prompt-composer textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.submission-log {
+  margin-top: 1.5rem;
+  background: rgba(3, 7, 18, 0.65);
+  border-radius: 12px;
+  border: 1px solid rgba(148, 193, 249, 0.2);
+  padding: 1rem 1.25rem;
+}
+
+.submission-log h2 {
+  margin-top: 0;
+}
+
+.submission-log pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: rgba(148, 193, 249, 0.85);
+}
+
+@media (max-width: 720px) {
+  .protected-shell,
+  .prompt-composer {
+    padding: 1.25rem;
+  }
+
+  .app-shell {
+    padding: 2rem 1rem 3rem;
+  }
+}
